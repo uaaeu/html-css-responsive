@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychedelic Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Psychedelic Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">
+                    Age
+                    <span class="clue">(optional)</span>
+                </label>
+                <input type="number" name="age" id="number" class="form-control" min="18" max="118" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current psychedelic rank?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current psychedelic rank</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="experienced">Experienced</option>
+                    <option value="enlightened">Enlightened</option>
+                    <option value="mystical">Mystical</option>
+                    <option value="heroic">Heroic</option>
+                    <option value="out">Out of this world</option>
+                    <option value="other">From other dimensions</option>
+                    <option value="preferNo">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Psychedelics to a friend?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="emphatically" class="input-radio" checked>
+                    Emphatically
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="possibly" class="input-radio">
+                    Possibly
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure" class="input-radio">
+                    Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite psychedelics</p>
+                <select name="favorite" id="favorite" class="form-control" required>
+                    <option disabled selected value>Select favorite psychedelics</option>
+                    <option value="lsd">LSD</option>
+                    <option value="dmt">DMT</option>
+                    <option value="salvia">Salvia Divinorum</option>
+                    <option value="psilocybin">Psilocybin</option>
+                    <option value="mescaline">Mescaline</option>
+                    <option value="5-meo-dmt">5-MeO-DMT</option>
+                    <option value="2cb">2C-B</option>
+                    <option value="bufotenin">Bufotenin</option>
+                    <option value="ketamine">Ketamine</option>
+                    <option value="ibogaine">Ibogaine</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-grorp">
+                <p>What are your expectations from psychedelic experiences</p>
+                <span class="clue">(Check all that apply)</span>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="visuals">
+                    Visuals
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="emotion">
+                    Emotion
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="sensation">
+                    Sensation
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="consciousness">
+                    Consciousness
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="trance">
+                    State of Trance
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="calmness">
+                    Calmness
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="energy">
+                    Energy
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="meditation">
+                    Meditation
+                </label>
+                <label>
+                    <input type="checkbox" name="expectation" class="input-checkbox" value="exploration">
+                    Exploration
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What are your personal thoughts about psychedelics?</p>
+                <textarea name="thoughts" id="thoughts" class="input-textarea" placeholder="Enter your thoughts here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
